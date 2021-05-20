@@ -1,3 +1,4 @@
+package Classes;
 // Objects
 // Interfaces
 // Abstract classes
@@ -13,7 +14,7 @@ public class OOPS extends c implements A,B{
         System.out.println(a);
         OV ob=new OV();
         ob.speed();
-        Hello.hello();
+        HelloWorld.hello();
     }
     public void apple(){
 

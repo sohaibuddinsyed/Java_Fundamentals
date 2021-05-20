@@ -1,4 +1,4 @@
-package Classes_in_java;
+package Classes;
 
 public class HelloWorld{
     public static void main(String args[]){

@@ -1,4 +1,4 @@
-
+package Classes;
 public class Singleton{
     public static void main(String[] args){
         Instance in1 = Instance.getInstance();

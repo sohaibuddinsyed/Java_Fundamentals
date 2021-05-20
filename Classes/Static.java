@@ -1,8 +1,9 @@
+package Classes;
 import java.util.*;
 public class Static {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args){
         String display = "Enter the value of a:";
-        Scanner sc = new Scanner(System.in);
         System.out.println(display);
         int a = sc.nextInt();
         HelloWorld.hello(); //Calling a static method
