@@ -1,12 +1,11 @@
 import java.util.*;
-
 public class Static {
     public static void main(String[] args){
         String display = "Enter the value of a:";
         Scanner sc = new Scanner(System.in);
         System.out.println(display);
         int a = sc.nextInt();
-        Hello.hello(); //Calling a static method
+        HelloWorld.hello(); //Calling a static method
 
         Player p1 = new Player();
         Player.setHealth(a); // Proper way to access static method

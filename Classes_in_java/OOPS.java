@@ -2,7 +2,6 @@
 // Interfaces
 // Abstract classes
 // COllections
-
 public class OOPS extends c implements A,B{
     
     // integer a with value 10. Print it onto console.
