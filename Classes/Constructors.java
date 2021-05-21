@@ -1,4 +1,4 @@
-// package Classes;
+package Classes;
 
 public class Constructors {
     public static void main(String args[]){
@@ -11,6 +11,7 @@ class MyConstructorClass{
     private int b;
     private boolean c;
 
+    // Required if an empty constructor will be called and constructors have been defined
     MyConstructorClass(){}
 
     MyConstructorClass(int a, int b){

@@ -5,19 +5,27 @@ public class Singleton{
         Instance in2 = Instance.getInstance();
         if(in1 == in2){
             System.out.println("Same instances");
-            // System.out.println(in1);
         }
+        System.out.println("Count of instances :" + Instance.instanceCount);
     }
 }
 
 class Instance{
-    // get Instance is static and only one instance to be used, hence static instance.
-    public static Instance instance;
+    // Usual role of static vars is to maintain global counts.
+    static int instanceCount;
 
-    // Constructor is private. Can never be instantiate dexternally.
-    private Instance(){}
+    // getInstance() is static, hence instance needs to be static.
+    // Maintains only one variable of type Instance
+    private static Instance instance;
+    
 
-    // Static method below is used to invoke private constructor.
+    // Constructor is private. Can never be instantiated externally.
+    // Always to this to make a class uninstantiable.
+    private Instance(){
+        instanceCount++;
+    }
+
+    // static method below is called by main() and inturn invokes private constructor.
     public static Instance getInstance(){
         if(instance == null) 
             instance = new Instance();

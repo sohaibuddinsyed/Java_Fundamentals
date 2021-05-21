@@ -1,4 +1,4 @@
-// package Classes;                                                    // Anamoly
+package Classes;                                                    // Anamoly
 
 // The use of accessors is an example of a design pattern that's commonly used by Java programmers.
 public class MyAcessorPattern {
