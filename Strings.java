@@ -12,7 +12,7 @@ class MyStringTokenizer{
         final String s = "Name : Sohaib, Shortname : ssd, dob : 11-01-2000";
         StringTokenizer st = new StringTokenizer(s);
         System.out.println("Total Tokens are : " + st.countTokens());
-        MyWrapperClasses.indent("Tokenizer with delimiter in .nextToken()");
+        WrapperClasses.indent("Tokenizer with delimiter in .nextToken()");
         while(st.hasMoreTokens()){
             System.out.print("Key "+st.nextToken(":"));
             System.out.println(" Value "+ st.nextToken(","));
@@ -23,7 +23,7 @@ class MyStringTokenizer{
 
         // Ignores delimited chars in output
         // Note constructor call
-        MyWrapperClasses.indent("Tokenizer with delimiter in constructor");
+        WrapperClasses.indent("Tokenizer with delimiter in constructor");
         StringTokenizer st2 = new StringTokenizer(s,",:");
         while(st2.hasMoreTokens()){
             System.out.print("Key "+st2.nextToken());

@@ -1,5 +1,5 @@
 // Java type wrappers are classes that encapsulate a primitive type within an Object.
-public class MyWrapperClasses {
+public class WrapperClasses {
     public static void main(String args[]){
         Wrappers w = new Wrappers();
         indent("Int wrappers");
