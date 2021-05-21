@@ -48,18 +48,15 @@ class Player
         Player.health = health;
     }
     // non-static getter
-    public int getHealth() 
-    { 
+    public int getHealth(){ 
         return health; 
     } 
-    public int getAge() 
-    { 
+    public int getAge(){ 
         return age; 
     } 
 
     // static setter
-    public static void setHealth(int h) 
-    { 
+    public static void setHealth(int h){ 
         health = h; 
 
         // Incorrect as static cannot be referenced by an object
